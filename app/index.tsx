@@ -1,9 +1,10 @@
+import { Button } from "@react-navigation/elements";
 import React from "react";
 import {
   Text,
-  View,
-  Image,
-  TextInput
+  TextInput,
+  TouchableOpacity,
+  View
 } from "react-native";
 import { style } from "./styles";
 // import Logo from '../assets/logo.png'
@@ -15,7 +16,7 @@ export default function Login() {
         {/* <Image 
           source={Logo}
         /> */}
-        <Text style={style.logoText}>Splash</Text>
+        <Text style={style.logoText}>appH</Text>
       </View>
       <View style={style.boxMiddle}>
         <Text style={style.loginInput}>Usuário</Text>
@@ -24,7 +25,9 @@ export default function Login() {
         <TextInput style={style.boxLoginInput}></TextInput>
       </View>
       <View style={style.boxBottom}>
-
+        <TouchableOpacity style={style.enterBottom}>
+          <Text>Entrar</Text>
+        </TouchableOpacity>
       </View>
     </View>
   );

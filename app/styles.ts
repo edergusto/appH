@@ -23,9 +23,16 @@ export const style = StyleSheet.create(
             paddingHorizontal:37
         },
         boxBottom: {
-            height:Dimensions.get('window').height/3,
-            width:'100%',
+            height:Dimensions.get('window').height/3
             // backgroundColor:'blue'
+        },
+        enterBottom:{
+            backgroundColor:themes.colors.primary,
+            color:'#FFF',
+            width: 'auto',
+            paddingHorizontal: 40,
+            paddingVertical: 10,
+            borderRadius: 40,
         },
         logoText:{
             fontSize:60,
